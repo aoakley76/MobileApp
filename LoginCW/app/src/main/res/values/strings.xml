@@ -11,4 +11,6 @@
     <string name="regscreen_pw">Password</string>
     <string name="regscreenconfirm_pw">Confirm Password</string>
     <string name="regscreen_btn">Register</string>
+    <string name="btnForgotPW">Forgot Password?</string>
+    <string name="tvForgotPW">Forgotten Password</string>
 </resources>
