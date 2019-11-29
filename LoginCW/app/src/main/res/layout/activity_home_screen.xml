@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#6ba8a9"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <Button
+        android:id="@+id/BtnToSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="247dp"
+        android:background="#1d4d4f"
+
+        android:padding="7dp"
+        android:text="Plan and Buy"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="209dp"
+        android:background="#1d4d4f"
+        android:padding="6dp"
+        android:text="Enter Your Journey Below"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toTopOf="@+id/autoCompleteEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/FirstImage"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteEditText"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="39dp"
+        android:hint="Travelling From"
+        android:textColor="#FFFF"
+        android:textColorHint="#ffff"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/autoCompleteTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:visibility="visible" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="211dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Travelling To"
+        android:textColor="#FFFF"
+        android:textColorHint="#ffff"
+
+        app:layout_constraintBottom_toTopOf="@+id/BtnToSecond"
+        app:layout_constraintStart_toStartOf="@+id/autoCompleteEditText"
+        app:layout_constraintTop_toBottomOf="@+id/autoCompleteEditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
