@@ -13,4 +13,6 @@
     <string name="regscreen_btn">Register</string>
     <string name="btnForgotPW">Forgot Password?</string>
     <string name="tvForgotPW">Forgotten Password</string>
+    <string name="title_activity_output_screen">Map</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
